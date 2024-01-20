@@ -1,0 +1,21 @@
+.root {
+  width: 100%;
+  height: 100vh;
+  background: #F5F5F5;
+  padding: 25px 45px;
+  display: grid;
+  grid-template-columns: 17% 1fr;
+  grid-template-rows: 110px calc(100vh - 50px - 25px - 110px);
+  gap: 25px;
+
+  > * {
+    border-radius: 30px;
+    background: #FFF;
+  }
+
+  .content {
+    overflow: hidden;
+    padding: 25px 25px 0 25px;
+  }
+}
+

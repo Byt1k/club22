@@ -1,0 +1,29 @@
+.header {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+
+  .search {
+    width: 600px;
+  }
+
+  .btn {
+    width: 210px;
+    height: 61px;
+    font-size: 18px;
+    margin-left: auto;
+  }
+
+  .notifications {
+    margin: 0 40px;
+  }
+
+  .profile {
+    img {
+      width: 61px;
+      height: 61px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}

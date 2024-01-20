@@ -1,0 +1,47 @@
+.sidebar {
+  grid-row: span 2;
+  padding: 35px 25px;
+
+  .logo {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 55px;
+  }
+
+  .menu {
+    &__item {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      margin-bottom: 30px;
+      color: #7D7D7D;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.27px;
+      transition: all .3s ease;
+
+      .icon {
+        width: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          max-width: 100%;
+
+          path {
+            transition: all .3s ease;
+          }
+        }
+      }
+
+      &:hover, &_active {
+        color: #032EA7;
+
+        .icon svg path {
+          fill: #032EA7;
+        }
+      }
+    }
+  }
+}

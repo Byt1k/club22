@@ -1,5 +1,6 @@
 import s from './Table.module.scss'
 import svgIcons from '@/utils/svg-icons'
+import classnames from 'classnames'
 
 const Table = () => {
     const users = [
@@ -150,35 +151,31 @@ const Table = () => {
     ]
 
     return (
-        <table className={s.users}>
-            <thead>
-                <tr>
-                    <td>ФИО участника</td>
-                    <td>Статус</td>
-                    <td>Семья</td>
-                    <td>Дата рождения</td>
-                    <td>Телефон</td>
-                    <td />
-                </tr>
-            </thead>
-            <tbody className="scroll">
+        <div className={s.users}>
+            <div className={classnames(s.users__row, s.users__row_head)}>
+                <div>ФИО участника</div>
+                <div>Статус</div>
+                <div>Семья</div>
+                <div>Дата рождения</div>
+                <div>Телефон</div>
+                <div />
+            </div>
+            <div className={classnames(s.users__content, 'scroll')}>
                 {users?.map(user => (
-                    <tr key={'user-' + user.id}>
-                        <td>
-                            <div className={s.info}>
-                                <img src={user.photo} alt={user.name} />
-                                <p>{user.name}</p>
-                            </div>
-                        </td>
-                        <td>{user.status}</td>
-                        <td>{user.family}</td>
-                        <td>{user.birthday}</td>
-                        <td>{user.phone}</td>
-                        <td className="cursor-pointer">{svgIcons.edit}</td>
-                    </tr>
+                    <div key={'user-' + user.id} className={s.users__row}>
+                        <div className={s.info}>
+                            <img src={user.photo} alt={user.name} />
+                            <p>{user.name}</p>
+                        </div>
+                        <div>{user.status}</div>
+                        <div>{user.family}</div>
+                        <div>{user.birthday}</div>
+                        <div>{user.phone}</div>
+                        <div className="cursor-pointer">{svgIcons.edit}</div>
+                    </div>
                 ))}
-            </tbody>
-        </table>
+            </div>
+        </div>
     )
 }
 

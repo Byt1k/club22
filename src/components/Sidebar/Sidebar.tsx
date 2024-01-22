@@ -1,13 +1,13 @@
-import React from 'react'
+'use client'
+
 import s from './Sidebar.module.scss'
 import Link from 'next/link'
 import svgIcons from '@/utils/svg-icons'
 import classnames from 'classnames'
-import { headers } from 'next/headers'
+import { usePathname } from 'next/navigation'
 
 const Sidebar = () => {
-    const headersList = headers()
-    const pathname = headersList.get('referer') || ''
+    const pathname = usePathname()
 
     const menu = [
         {

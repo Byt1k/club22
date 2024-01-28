@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import { ReactNode } from 'react'
-import s from '@/app/root/RootLayout.module.scss'
-import Sidebar from '@/components/Sidebar/Sidebar'
-import Header from '@/components/Header/Header'
+import s from './RootLayout.module.scss'
+import Sidebar from '@/components/Admin/Sidebar/Sidebar'
+import Header from '@/components/Admin/Header/Header'
 
 export const metadata: Metadata = {
-    title: 'Клуб 22',
+    title: 'Сеймейный клуб 22',
     description: 'Семейный клуб',
 }
 

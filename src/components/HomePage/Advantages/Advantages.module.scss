@@ -1,0 +1,52 @@
+@import "../HomePage.module";
+
+.advantages {
+  padding-top: 160px;
+
+  .container {
+    @extend %container;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .left {
+      width: 716px;
+
+      img {
+        @extend %img-animation;
+        width: 100%;
+        height: 304px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-top: 78px;
+      }
+    }
+
+    .right {
+      width: 566px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 2px solid #eee;
+
+        &__number {
+          min-width: 123px;
+          width: 123px;
+          color: #002FA7;
+          font-size: 28px;
+          font-weight: 500;
+          letter-spacing: -1.96px;
+        }
+
+        &__text {
+          color: #000;
+          font-size: 16px;
+          line-height: 22px;
+          max-width: 340px;
+        }
+      }
+    }
+  }
+}

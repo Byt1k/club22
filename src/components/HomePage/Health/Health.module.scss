@@ -1,0 +1,58 @@
+@import "../HomePage.module";
+
+.health {
+  padding-top: 160px;
+
+  .container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      width: 570px;
+
+      h2 {
+        margin-top: 30px;
+      }
+
+      p {
+        margin-top: 34px;
+        color: #373737;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .right {
+      width: 790px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 55px;
+        border-radius: 56px;
+        background: #002FA7;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26px;
+
+        &:first-child {
+          margin-left: 25px;
+        }
+
+        &:nth-child(7) {
+          margin-left: 50px;
+        }
+
+        &:last-child {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+}

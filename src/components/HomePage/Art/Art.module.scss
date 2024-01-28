@@ -1,0 +1,39 @@
+@import "../HomePage.module";
+
+.art {
+  padding-top: 160px;
+  overflow-x: hidden;
+
+  .container {
+    @extend %container;
+    text-align: center;
+
+    p {
+      color: #373737;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 30px auto 60px auto;
+      width: 803px;
+    }
+  }
+
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+
+    img {
+      @extend %img-animation;
+      border-radius: 15px;
+      object-fit: cover;
+      width: 650px;
+      height: 300px;
+
+      &.main {
+        width: 960px;
+        height: 435px;
+      }
+    }
+  }
+}

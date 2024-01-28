@@ -1,7 +1,7 @@
 import s from './Users.module.scss'
 import Button from '@/components/Button/Button'
-import Filter from '@/components/Users/Filter/Filter'
-import Table from '@/components/Users/Table/Table'
+import Filter from '@/components/Admin/Users/Filter/Filter'
+import Table from '@/components/Admin/Users/Table/Table'
 
 const Root = () => {
     return (

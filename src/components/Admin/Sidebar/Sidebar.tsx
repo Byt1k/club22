@@ -13,13 +13,13 @@ const Sidebar = () => {
         {
             id: 'users',
             icon: svgIcons.sidebar.users,
-            href: '/root/users',
+            href: '/admin/users',
             name: 'Члены клуба',
         },
         {
             id: 'events',
             icon: svgIcons.sidebar.events,
-            href: '/root/events',
+            href: '/admin/events',
             name: 'Мероприятия',
         },
     ]

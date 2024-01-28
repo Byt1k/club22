@@ -6,8 +6,8 @@ import { ReactNode } from 'react'
 const montserrat = Montserrat({ subsets: ['cyrillic'] })
 
 export const metadata: Metadata = {
-    title: 'Авторизация',
-    description: 'Авторизация в семейный клуб',
+    title: 'Семейный клуб 22',
+    description: 'Семейный клуб',
 }
 
 export default function RootLayout({

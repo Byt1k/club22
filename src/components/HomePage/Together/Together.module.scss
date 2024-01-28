@@ -1,0 +1,61 @@
+@import '../HomePage.module';
+
+.together {
+  padding-top: 150px;
+
+  .container {
+    @extend %container;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .left {
+    width: 596px;
+    margin-top: 75px;
+
+    .text {
+      color: #373737;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 35px 0 82px;
+      width: 550px;
+    }
+
+    .card {
+      background: #002FA7 url("/img/home/together-card.svg") no-repeat right center / contain;
+      width: 457px;
+      height: 184px;
+      border-radius: 15px;
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 25px 150px 25px 25px;
+    }
+  }
+
+  .right {
+    width: 615px;
+    height: 622px;
+    position: relative;
+
+    .img {
+      @extend %img-animation;
+
+      &_parent {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+      }
+
+      &_child {
+        width: 403px;
+        height: 352px;
+        border-radius: 15px;
+        position: absolute;
+        left: -143px;
+        bottom: 56px;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import "../HomePage.module";
+
+.main {
+  padding-top: 52px;
+
+  .container {
+    @extend %container;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      color: #0F0F0F;
+      font-size: 68px;
+      font-weight: 600;
+      line-height: 82px;
+
+      span {
+        color: #002FA7;
+      }
+    }
+
+    p {
+      color: #444;
+      font-size: 20px;
+      line-height: 27px;
+      width: 340px;
+    }
+  }
+
+  .img {
+    display: block;
+    width: 100%;
+    margin: 32px 0 41px;
+    @extend %img-animation;
+  }
+
+  .offer {
+    display: flex;
+    align-items: flex-start;
+
+    p {
+      color: #373737;
+      font-size: 18px;
+      font-weight: 500;
+      width: 555px;
+    }
+
+    &__btn {
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      color: #002FA7;
+      font-size: 20px;
+      font-weight: 600;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #002FA7;
+      column-gap: 7px;
+      margin-left: 185px;
+    }
+  }
+}

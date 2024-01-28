@@ -1,0 +1,34 @@
+@import "../HomePage.module";
+
+.footer {
+  padding: 30px 0;
+  background-color: #F3F3F3;
+
+  .container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 55px;
+    height: 55px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .menu {
+    margin-left: auto;
+    display: flex;
+    column-gap: 80px;
+
+    &__item {
+      color: #444;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

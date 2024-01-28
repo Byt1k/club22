@@ -1,0 +1,74 @@
+@import "../HomePage.module";
+
+.potential {
+  padding-top: 150px;
+
+  .container {
+    @extend %container;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+    h2 {
+      width: 600px;
+    }
+
+    > div {
+      width: 515px;
+      margin-top: 20px;
+
+      p {
+        color: #373737;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .btn {
+        width: 205px;
+        height: 56px;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 462px;
+
+    > img {
+      @extend %img-animation;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+
+    > div {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      border-radius: 15px;
+      background-color: #F6F6F6;
+      padding: 25px 42px 25px 30px;
+      width: 503px;
+    }
+
+    &__title {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      color: #000;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

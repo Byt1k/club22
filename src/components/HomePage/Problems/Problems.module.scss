@@ -1,0 +1,42 @@
+@import "../HomePage.module";
+
+.problems {
+  padding-top: 150px;
+
+  .container {
+    @extend %container;
+
+    h2 {
+      text-align: center;
+      width: 970px;
+      margin: 0 auto 54px;
+      font-size: 40px;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+  }
+
+  &__item {
+    padding: 25px 30px 30px;
+    border-radius: 15px;
+    background-color: #EDEDED;
+
+    .number {
+      color: #002FA7;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -1.96px;
+    }
+
+    .text {
+      margin-top: 45px;
+      color: #000;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
